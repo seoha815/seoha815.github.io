@@ -13,7 +13,7 @@
 *{ box-sizing:border-box; }
 html,body{ margin:0; padding:0; }
 body{
-  font-family: "Inter", "Noto Sans KR", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a{ color: inherit; }
