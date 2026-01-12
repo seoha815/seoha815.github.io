@@ -114,11 +114,12 @@ h1{
 }
 
 .btn.primary{
-  background: linear-gradient(135deg, var(--accent), var(--accent3));
+  background: var(--accent3);
   border: 0;
   color: #111;
   font-weight: 700;
 }
+
 
 /* Right side (photo) */
 .hero-card{
