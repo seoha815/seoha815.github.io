@@ -50,10 +50,17 @@ a{ color: inherit; }
 }
 
 .brand{
-  text-decoration:none;
-  font-weight:700;
-  letter-spacing:.2px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
 }
+
+.brand-logo{
+  height: 32px;      /* 원하는 크기로 조절 */
+  width: auto;
+  display: block;
+}
+
 
 .menu a{
   text-decoration:none;
@@ -148,13 +155,15 @@ h1{
 .section:first-of-type{
   border-top: 0;
 }
+/* spacing between About / Interests / Works headings inside the same section */
 .section h2{
-  margin: 18px 0 10px;   /* 각 블록 간 간격 */
+  margin: 28px 0 12px;   /* 위/아래 간격: 숫자만 조절 */
   font-size: 22px;
 }
 .section h2:first-child{
-  margin-top: 0;         /* About 제목은 위쪽 붙게 */
+  margin-top: 0;         /* section 맨 첫 제목은 위 여백 제거 */
 }
+
 
 
 /* plain containers (no bg/shadow) */
