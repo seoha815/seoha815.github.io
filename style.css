@@ -116,7 +116,7 @@ h1{
 }
 
 .btn:hover{
-  border-color: rgba(0,0,0,.22);
+  /* border-color: rgba(0,0,0,.22); */
   color: var(--accent);
 }
 
