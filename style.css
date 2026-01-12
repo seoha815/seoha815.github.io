@@ -56,11 +56,10 @@ a{ color: inherit; }
 }
 
 .brand-logo{
-  height:16px;      /* 원하는 크기로 조절 */
+  height: 32px;      /* 원하는 크기로 조절 */
   width: auto;
   display: block;
 }
-
 
 .menu a{
   text-decoration:none;
@@ -118,7 +117,9 @@ h1{
 
 .btn:hover{
   border-color: rgba(0,0,0,.22);
+  color: var(--accent);
 }
+
 
 .btn.primary{
   background: var(--accent3);
