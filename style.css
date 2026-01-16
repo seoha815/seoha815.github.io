@@ -240,9 +240,10 @@ h1{
 .work-text{ min-width: 0; }
 
 .paper-title{
-  color: var(--text);
+  color: var(--accent2);
   font-size: 14.5px;
   line-height: 1.35;
+  font-weight: 650;
 }
 
 .paper-authors{
