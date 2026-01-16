@@ -254,7 +254,7 @@ h1{
 
 .me{
   color: inherit;     /* 기본 텍스트 색(검정) 따라감 */
-  font-weight: 700;   /* 볼드 */
+  font-weight: 500;   /* 볼드 */
 }
 
 .paper-venue{
