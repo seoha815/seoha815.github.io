@@ -316,3 +316,42 @@ h1{
 
   h1{ font-size: 34px; }
 }
+
+.edu{
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: grid;
+  gap: 10px;
+}
+
+.edu li{
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.edu-date{
+  color: var(--muted);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.edu-school{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.edu-major{
+  margin-top: 2px;
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.35;
+}
+
+@media (max-width: 860px){
+  .edu li{ grid-template-columns: 1fr; }
+  .edu-date{ white-space: normal; }
+}
