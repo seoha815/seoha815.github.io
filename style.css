@@ -347,7 +347,7 @@ h1{
 .edu-major{
   margin-top: 2px;
   font-size: 13px;
-  color: var(--text);
+  color: var(--accent);
   line-height: 1.35;
 }
 
