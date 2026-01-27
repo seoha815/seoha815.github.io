@@ -271,6 +271,11 @@ h1{
   font-weight: 600;
 }
 
+.news{
+  font-weight: 600;
+  color: var(--accent);
+}
+
 @media (max-width: 860px){
   .work-row{ grid-template-columns: 56px 1fr; }
   .work-thumb{ width: 56px; height: 56px; }
