@@ -261,7 +261,7 @@ h1{
 .paper-venue{
   margin-top: 4px;
   font-size: 12px;
-  color: var(--accent);
+  color: var(--muted);
 }
 
 .paper-accept{
