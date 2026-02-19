@@ -221,16 +221,18 @@ h1{
   margin-top: 10px;
 }
 
+/* Works (each item has its own thumbnail) */
 .work-row{
   display: grid;
-  grid-template-columns: 64px 1fr;
+  grid-template-columns: 96px 1fr; /* 64px -> 96px (4:3 가로에 맞게 폭 확대) */
   gap: 12px;
   align-items: start;
 }
 
 .work-thumb{
-  width: 64px;
-  height: 64px;
+  width: 96px;            /* grid 첫 컬럼 폭과 맞춤 */
+  aspect-ratio: 4 / 3;    /* 4:3 가로 직사각형 */
+  height: auto;           /* aspect-ratio가 높이를 계산 */
   object-fit: cover;
   border-radius: 10px;
   border: 1px solid var(--line);
