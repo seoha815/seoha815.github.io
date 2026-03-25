@@ -351,8 +351,8 @@ h1{
 
 .edu li{
   display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 12px;
+  grid-template-columns: 200px 1fr;  /* 160 → 200으로 증가 */
+  gap: 16px;
   align-items: start;
 }
 
@@ -363,11 +363,11 @@ h1{
 
 .edu-school{
   font-size: 1.15rem;
-  font-weight: 600;
+  font-weight: 400;   /* 또는 normal */
 }
 
 .edu-desc{
-  font-size: 1.05rem;
+  font-size: 1.1rem;  /* 기존 1.05 → 증가 */
 }
 
 .edu-major{
