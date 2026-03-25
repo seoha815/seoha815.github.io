@@ -264,6 +264,7 @@ h1{
 .paper-accept{
   font-size: 0.9rem;   /* 약간 키움 */
   color: #F39EB6;
+  font-weight: 700;
 }
 
 .me{
