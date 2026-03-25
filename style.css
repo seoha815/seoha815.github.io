@@ -357,15 +357,17 @@ h1{
 }
 
 .edu-date{
-  color: var(--muted);
-  font-size: 13px;
-  white-space: nowrap;
+  font-size: 1rem;
+  color: #555;
 }
 
 .edu-school{
+  font-size: 1.15rem;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 1.35;
+}
+
+.edu-desc{
+  font-size: 1.05rem;
 }
 
 .edu-major{
