@@ -256,17 +256,17 @@ h1{
 .work-text{ min-width: 0; }
 
 .paper-title{
-  color: var(--text);
-  font-size: 14.5px;
-  line-height: 1.35;
+  font-size: 1.1rem;   /* 기존보다 키움 (중요) */
   font-weight: 600;
 }
 
 .paper-authors{
-  margin-top: 4px;
-  color: var(--text);
-  font-size: 13px;
-  line-height: 1.35;
+  font-size: 0.95rem;  /* 약간 키움 */
+}
+
+.paper-accept{
+  font-size: 0.9rem;   /* 약간 키움 */
+  color: #666;
 }
 
 .me{
@@ -278,13 +278,6 @@ h1{
   margin-top: 4px;
   font-size: 12px;
   color: var(--muted);
-}
-
-.paper-accept{
-  margin-top: 4px;
-  font-size: 12px;
-  color: var(--accent);
-  font-weight: 600;
 }
 
 .news{
