@@ -166,6 +166,20 @@ h1{
 }
 
 
+.work-link-thumb{
+  display: inline-block;
+}
+
+.paper-title-link{
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.paper-title-link:hover .paper-title{
+  color: var(--accent);
+}
+
 
 /* plain containers (no bg/shadow) */
 .card{
