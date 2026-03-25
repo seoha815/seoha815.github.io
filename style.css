@@ -244,13 +244,9 @@ h1{
 }
 
 .work-thumb{
-  width: 96px;            /* grid 첫 컬럼 폭과 맞춤 */
-  aspect-ratio: 4 / 3;    /* 4:3 가로 직사각형 */
-  height: auto;           /* aspect-ratio가 높이를 계산 */
-  object-fit: cover;
+  width: 180px;   /* 기존보다 크게 */
+  height: auto;
   border-radius: 10px;
-  border: 1px solid var(--line);
-  flex: none;
 }
 
 .work-text{ min-width: 0; }
