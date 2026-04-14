@@ -382,13 +382,13 @@ h1{
 }
 
 .section-news{
-  background: #fefafc;
-  padding: 40px 0;   /* 위아래 여백 크게 */
+  background: var(--accent5);
+  padding: 20px 0;   /* 위아래 여백 크게 */
 }
 
 .section-publications{
-  background: #fefafc;
-  padding: 40px 0;
+  background: var(--accent5);
+  padding: 20px 0;
 }
 
 .container{
