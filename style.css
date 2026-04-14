@@ -11,6 +11,7 @@
   --accent2: #B8DB80;  /* green */
   --accent3: #FFE4EF;  /* soft pink */
   --accent4: #F7F6D3;  /* cream */
+  --accent5: #fdf6f8
   --radius: 18px;
 }
 
@@ -381,15 +382,13 @@ h1{
 }
 
 .section-news{
-  background: #fdf1f4;
-  border-radius: 16px;
-  padding: 20px;
+  background: #fdf6f8;
+  padding: 40px 0;   /* 위아래 여백 크게 */
 }
 
 .section-publications{
-  background: #fdf1f4;
-  border-radius: 16px;
-  padding: 20px;
+  background: #fdf6f8;
+  padding: 40px 0;
 }
 
 .container{
