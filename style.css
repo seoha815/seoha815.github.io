@@ -247,8 +247,9 @@ h1{
 }
 
 .work-thumb{
-  width: 200px;
-  height: auto;
+  width: 240px;
+  aspect-ratio: 3 / 2;   /* 🔥 핵심 */
+  object-fit: cover;     /* 🔥 잘리는 대신 채움 */
   border-radius: 12px;
   flex-shrink: 0;
 }
@@ -353,10 +354,15 @@ h1{
 }
 
 .edu li{
-  display: grid;
-  grid-template-columns: 200px 1fr;  /* 160 → 200으로 증가 */
-  gap: 16px;
-  align-items: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.edu li > div:first-child{
+  flex: 1;
+  min-width: 0;
 }
 
 .edu-date{
@@ -367,6 +373,7 @@ h1{
 .edu-school{
   font-size: 1.05rem;
   font-weight: 400;   /* 또는 normal */
+  white-space: nowrap;
 }
 
 .edu-desc{
