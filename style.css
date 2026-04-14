@@ -380,6 +380,23 @@ h1{
   line-height: 1.35;
 }
 
+.section-news{
+  background: #fdf1f4;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.section-publications{
+  background: #fdf1f4;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.container{
+  max-width: 1200px;
+  padding: 28px;   /* 기존 24px → 살짝 증가 */
+}
+
 @media (max-width: 860px){
   .edu li{ grid-template-columns: 1fr; }
   .edu-date{ white-space: normal; }
