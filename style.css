@@ -248,8 +248,9 @@ h1{
 
 .work-thumb{
   width: 240px;
-  aspect-ratio: 3 / 2;   /* 🔥 핵심 */
-  object-fit: cover;     /* 🔥 잘리는 대신 채움 */
+  aspect-ratio: 3 / 2;
+  object-fit: contain;   /* 🔥 cover → contain 으로 변경 */
+  background: #ffffff;   /* 빈 공간 배경 (선택) */
   border-radius: 12px;
   flex-shrink: 0;
 }
