@@ -393,7 +393,7 @@ h1{
 
 .container{
   max-width: 1200px;
-  padding: 28px;   /* 기존 24px → 살짝 증가 */
+  padding: 24px;   /* 기존 24px → 살짝 증가 */
 }
 
 @media (max-width: 860px){
