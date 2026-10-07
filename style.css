@@ -420,3 +420,42 @@ h3{
   html{ scroll-behavior: auto; }
   .btn{ transition: none; }
 }
+
+/* ---------- Gallery entry (index) & gallery page ---------- */
+.gallery-entry{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 32px;
+  padding: 28px 32px;
+  background: var(--sand);
+  border-radius: 16px;
+}
+.gallery-entry .prose{ max-width: 52ch; }
+
+.gallery-head{ padding-top: 48px; }
+.gallery-title{ margin-top: 12px; }
+.gallery-body{ padding-top: 8px; }
+
+.back-link{
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 15px;
+}
+.back-link:hover{ color: var(--rose-dk); }
+
+/* 사진 수가 많을 때 갤러리 페이지에서는 칸을 조금 더 촘촘하게 */
+.gallery-body .gallery{
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
+.gallery-body .photo-title{ font-size: 18px; }
+
+@media (max-width: 520px){
+  .gallery-entry{ padding: 22px 20px; }
+  .gallery-body .gallery{ grid-template-columns: 1fr 1fr; gap: 14px; }
+  .gallery-body .photo{ padding: 6px 6px 10px; }
+  .gallery-body .photo figcaption{ flex-direction: column; gap: 2px; }
+  .gallery-body .photo-title{ font-size: 16px; }
+}
