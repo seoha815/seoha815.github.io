@@ -94,7 +94,7 @@ h2[id], h3[id]{ scroll-margin-top: 84px; }
 h1{
   font-family: var(--serif);
   font-weight: 500;
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(56px, 9vw, 104px);
   line-height: .95;
   letter-spacing: -.01em;
@@ -333,7 +333,7 @@ h3{
 }
 .photo-title{
   font-family: var(--serif);
-  font-style: italic;
+  font-style: normal;
   font-size: 19px;
   line-height: 1.25;
 }
@@ -358,7 +358,7 @@ h3{
 .lightbox p{
   margin: 10px 0 0;
   font-family: var(--serif);
-  font-style: italic;
+  font-style: normal;
   font-size: 20px;
   text-align: center;
 }
@@ -432,7 +432,7 @@ h3{
   background: var(--sand);
   border-radius: 16px;
 }
-.gallery-entry .prose{ max-width: 52ch; }
+.gallery-entry .prose{ max-width: none; flex: 1 1 auto; }
 
 .gallery-head{ padding-top: 48px; }
 .gallery-title{ margin-top: 12px; }
