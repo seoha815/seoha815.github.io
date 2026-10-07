@@ -325,9 +325,8 @@ h3{
 }
 .photo figcaption{
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 10px;
+  flex-direction: column;   /* 글 → 그 아래 날짜 */
+  gap: 4px;
   margin-top: 10px;
   padding: 0 2px;
 }
@@ -337,7 +336,7 @@ h3{
   font-size: 19px;
   line-height: 1.25;
 }
-.photo-meta{ font-size: 13px; color: var(--muted); white-space: nowrap; }
+.photo-meta{ font-size: 13px; color: var(--muted); text-align: center; }
 
 /* Lightbox */
 .lightbox{
