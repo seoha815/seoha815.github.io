@@ -95,10 +95,10 @@ h1{
   font-family: var(--serif);
   font-weight: 500;
   font-style: normal;
-  font-size: clamp(56px, 9vw, 104px);
+  font-size: clamp(42px, 6vw, 66px);
   line-height: .95;
   letter-spacing: -.01em;
-  margin: 18px 0 16px;
+  margin: 18px 0 24px;
 }
 
 .subtitle{
@@ -164,7 +164,7 @@ h3{
 }
 .sub-heading{ margin-top: 48px; }
 
-.prose{ max-width: 68ch; margin: 0; }
+.prose{ max-width: none; margin: 0; }
 .muted{ color: var(--muted); }
 
 /* ---------- News ---------- */
@@ -317,7 +317,7 @@ h3{
 }
 .photo img{
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
   border-radius: 3px;
@@ -458,4 +458,32 @@ h3{
   .gallery-body .photo{ padding: 6px 6px 10px; }
   .gallery-body .photo figcaption{ flex-direction: column; gap: 2px; }
   .gallery-body .photo-title{ font-size: 16px; }
+}
+
+/* ---------- About 링크 ---------- */
+.text-link{
+  color: var(--rose-dk);
+  text-decoration: none;
+}
+.text-link:hover{
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------- Under review 썸네일 자리 ---------- */
+.thumb-placeholder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--rose-dk);
+  background: var(--blush);
+  border: 1px dashed var(--rose);
+}
+@media (max-width: 860px){
+  .thumb-placeholder{ font-size: 15px; }
 }
