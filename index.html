@@ -166,41 +166,13 @@
       </div>
     </section>
 
-    <!-- Gallery -->
+    <!-- Gallery (entry only — photos live on gallery.html) -->
     <section class="section">
       <div class="container">
         <h2 id="gallery">Gallery</h2>
-        <!-- 사진 추가: <figure> 블록 하나를 복사해서 src, alt, figcaption만 바꾸면 됩니다 -->
-        <div class="gallery">
-          <figure class="photo">
-            <button type="button" class="photo-open">
-              <img src="assets/gallery/01.jpg" alt="ICLR 2026 poster session" loading="lazy">
-            </button>
-            <figcaption>
-              <span class="photo-title">ICLR 2026 poster session</span>
-              <span class="photo-meta">Apr 2026</span>
-            </figcaption>
-          </figure>
-
-          <figure class="photo">
-            <button type="button" class="photo-open">
-              <img src="assets/gallery/02.jpg" alt="First week at UC Irvine" loading="lazy">
-            </button>
-            <figcaption>
-              <span class="photo-title">First week at UC Irvine</span>
-              <span class="photo-meta">Oct 2026</span>
-            </figcaption>
-          </figure>
-
-          <figure class="photo">
-            <button type="button" class="photo-open">
-              <img src="assets/gallery/03.jpg" alt="Soft Computing Lab" loading="lazy">
-            </button>
-            <figcaption>
-              <span class="photo-title">With the Soft Computing Lab</span>
-              <span class="photo-meta">Seoul</span>
-            </figcaption>
-          </figure>
+        <div class="gallery-entry">
+          <p class="prose">A little scrapbook of life outside the lab: friends, family, trips, and a few proud moments.</p>
+          <a class="btn primary" href="gallery.html">Open gallery</a>
         </div>
       </div>
     </section>
@@ -222,32 +194,8 @@
     </footer>
   </main>
 
-  <!-- Gallery lightbox -->
-  <dialog class="lightbox" id="lightbox">
-    <button type="button" class="lightbox-close" aria-label="Close">×</button>
-    <img id="lightbox-img" alt="">
-    <p id="lightbox-cap"></p>
-  </dialog>
-
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
-
-    const box = document.getElementById("lightbox");
-    const boxImg = document.getElementById("lightbox-img");
-    const boxCap = document.getElementById("lightbox-cap");
-
-    document.querySelectorAll(".photo-open").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const img = btn.querySelector("img");
-        const cap = btn.closest("figure").querySelector("figcaption");
-        boxImg.src = img.src;
-        boxImg.alt = img.alt;
-        boxCap.textContent = cap ? cap.innerText.replace(/\n+/g, ", ") : "";
-        box.showModal();
-      });
-    });
-    box.querySelector(".lightbox-close").addEventListener("click", () => box.close());
-    box.addEventListener("click", e => { if (e.target === box) box.close(); });
   </script>
 </body>
 </html>
