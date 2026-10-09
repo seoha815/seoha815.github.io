@@ -443,3 +443,16 @@ h3{
 @media (max-width: 860px){
   .thumb-placeholder{ font-size: 15px; }
 }
+
+/* ---------- Education: 학교 옆 지도교수 ---------- */
+.edu-advisor{
+  color: var(--muted);      /* 날짜와 같은 색 */
+  font-size: 15px;
+  margin-left: 10px;
+}
+.edu-advisor .text-link{ color: var(--rose); }   /* 링크는 핑크 */
+.edu-advisor .text-link:hover{ color: var(--rose-dk); }
+
+@media (max-width: 520px){
+  .edu-advisor{ display: block; margin-left: 0; }
+}
